@@ -3,8 +3,8 @@
     "resourceGroup": "appmigworkshop",
     "sqlvmname": "sqlvm",
     "sqlAuthenticationLogin": "sqladmin",
-    "sqlAuthenticationPassword": "<Choose SQL Password>",
-    "ipAddressforRDP": "<Insert your IP Address>",
+    "sqlAuthenticationPassword": "DaKaiser2013!",
+    "ipAddressforRDP": "151.248.193.17",
     "domainControllerIP": "10.0.0.4",
     "resources": {
         "virtualNetworkName": "app-mig-workshop-vnet",
@@ -16,12 +16,11 @@
         "publicIPAllocationMethod": "Dynamic",
         "dnsLabelPrefix": "",
         "nicName": "myVMNic",
-        "vmSize": "Standard_D8s_v5",
+        "vmSize": "Standard_D4s_v5",
         "adminUsername": "vmadmin",
-        "adminPassword": "<Choose VM Password>",
+        "adminPassword": "DaKaiser2013!",
         "appusername": "AppsSvcAcct",
-        "apppassword": "<Choose App Password>"
-
+        "apppassword": "DaKaiser2013!"
     },
     "vnet":{
         "subnetName": "default",
