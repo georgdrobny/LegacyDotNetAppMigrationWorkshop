@@ -98,7 +98,7 @@ c:\windows\system32\inetsrv\APPCMD add apppool /name:"JobsAppPool" /managedPipel
 c:\windows\system32\inetsrv\APPCMD add site /name:Jobs /id:3 /bindings:http://${env:computername}:8082 /physicalPath:C:\Apps\Jobs
 c:\windows\system32\inetsrv\APPCMD set site Jobs "/[path='/'].applicationPool:JobsAppPool"
 
-DownloadNewApps -AppName "ibuyspy"
+DownloadNewExpand -AppName "ibuyspy"
 c:\windows\system32\inetsrv\APPCMD add apppool /name:"IBuySpyAppPool" /managedPipelineMode:"Integrated"
 c:\windows\system32\inetsrv\APPCMD add site /name:IBuySpy /id:4 /bindings:http://${env:computername}:8084 /physicalPath:C:\Apps\ibuyspy
 c:\windows\system32\inetsrv\APPCMD set site IBuySpy "/[path='/'].applicationPool:IBuySpyAppPool"
